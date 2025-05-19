@@ -9,7 +9,7 @@ class AuthController {
         session_start(); // Solo iniciamos sesión aquí
         $this->userModel = new User();
     }
-
+ // Funcion para que coloquen todos los parametros del login //
 public function processLogin() {
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = $_POST['email'];
@@ -34,7 +34,7 @@ public function processLogin() {
     }
 }
 
-    // Procesa el registro
+    // Procesa el registro  //
     public function processRegister() {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $name = $_POST['username'];

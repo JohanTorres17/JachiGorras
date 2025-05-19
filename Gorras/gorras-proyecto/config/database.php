@@ -1,4 +1,5 @@
 <?php
+//llamado a la base de datos //
 class Database {
     private $host = "localhost";
     private $db_name = "gorras_db";

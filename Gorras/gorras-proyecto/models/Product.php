@@ -2,7 +2,7 @@
 class Product {
     private $conn;
     private $table_name = "products";
-
+// Modelos de los productos con nombre, precio, categoria, imagen..//
     public $id;
     public $name;
     public $price;

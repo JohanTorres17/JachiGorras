@@ -1,42 +1,44 @@
-# Contents of /gorras-proyecto/gorras-proyecto/README.md
+# Jachigorras
 
-# Gorras Proyecto
+## Descripción del Proyecto
+*Jachigorras* es una tienda virtual dedicada a la venta de gorras modernas y personalizadas. El proyecto permite a los usuarios registrarse e iniciar sesión, explorar productos destacados en la página de inicio, navegar por la tienda (cuyos productos están almacenados en una base de datos) y realizar compras mediante un carrito de compras funcional. Está diseñado para ofrecer una experiencia de usuario sencilla y fluida.
 
-Este proyecto es una aplicación web para gestionar gorras. Permite a los usuarios crear, editar y listar gorras, así como gestionar usuarios.
+## Integrantes del Equipo
+- [Nombre completo del integrante 1]
+- [Nombre completo del integrante 2]
+- [Nombre completo del integrante 3]  
+(Agrega más nombres si aplica)
 
-## Estructura del Proyecto
+## Tecnologías Utilizadas
+- PHP
+- HTML5
+- CSS3
+- JavaScript
+- MySQL (mediante phpMyAdmin)
+- Servidor web Hostinger
 
-- **controllers/**: Contiene los controladores que manejan la lógica de la aplicación.
-  - `GorraController.php`: Controlador para manejar las gorras.
-  - `UserController.php`: Controlador para manejar los usuarios.
-  - `HomeController.php`: Controlador para manejar la página de inicio.
+## Instrucciones de Ejecución
 
-- **models/**: Contiene los modelos de datos.
-  - `Gorra.php`: Modelo que representa una gorra.
-  - `User.php`: Modelo que representa un usuario.
+1. *Subir los archivos al servidor*:  
+   Sube todos los archivos del proyecto al hosting de *Hostinger*, en la carpeta public_html o correspondiente al dominio.
 
-- **views/**: Contiene las vistas de la aplicación.
-  - `home/index.php`: Vista para la página de inicio.
-  - `gorras/`: Vistas relacionadas con las gorras.
-    - `list.php`: Vista para listar gorras.
-    - `edit.php`: Vista para editar una gorra.
-    - `create.php`: Vista para crear una nueva gorra.
-  - `users/`: Vistas relacionadas con los usuarios.
-    - `list.php`: Vista para listar usuarios.
-    - `edit.php`: Vista para editar un usuario.
+2. *Configurar la base de datos*:
+   - Accede a *phpMyAdmin* desde el panel de Hostinger.
+   - Crea una nueva base de datos e importa el archivo .sql con la estructura y datos de productos/usuarios.
+   - Actualiza el archivo de conexión (por ejemplo, conexion.php) con los datos correctos del host, usuario y contraseña de la base de datos.
 
-- **public/**: Contiene archivos accesibles públicamente.
-  - `index.php`: Punto de entrada de la aplicación.
+3. *Abrir la página web*:  
+   Visita el dominio asociado (por ejemplo, https://jachigorras.com) para ver la tienda en funcionamiento.
 
-- **config/**: Contiene la configuración de la aplicación.
-  - `database.php`: Configuración de la base de datos.
+## Enlace del Proyecto
+[https://jachigorras.com](https://jachigorras.com) (Reemplaza con el dominio real si es distinto)
 
-## Instalación
+## Características Principales
+- *Inicio de Sesión / Registro de Usuarios*: Gestión de cuentas mediante autenticación PHP/MySQL.
+- *Home Page*: Muestra productos destacados e información promocional.
+- *Tienda*: Visualiza todos los productos almacenados en la base de datos.
+- *Carrito de Compras*: Agrega productos, modifica cantidades y realiza el pedido.
+- *Diseño Responsive*: Compatible con celulares, tablets y computadoras.
 
-1. Clona el repositorio.
-2. Configura la base de datos en `config/database.php`.
-3. Accede a `public/index.php` para iniciar la aplicación.
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para discutir cambios.
+## Licencia
+Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.

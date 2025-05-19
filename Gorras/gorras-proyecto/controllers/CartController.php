@@ -1,7 +1,7 @@
 <?php
 require_once '../models/Cart.php';
 require_once '../models/Product.php';
-
+// Controlador del carrito de compras //
 class CartController {
     private $cartModel;
     private $productModel;

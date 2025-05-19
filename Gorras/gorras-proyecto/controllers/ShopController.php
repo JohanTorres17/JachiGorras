@@ -1,7 +1,7 @@
 <?php
 require_once '../config/database.php';
 require_once '../models/Product.php';
-
+// Controlador de la tienda de los productos  //
 class ShopController {
     private $productModel;
     private $db;
@@ -11,7 +11,7 @@ class ShopController {
         $this->db = $database->getConnection();
         $this->productModel = new Product($this->db);
     }
-
+// Funcion del catalogo //
     public function catalog() {
         $category = isset($_GET['category']) ? $_GET['category'] : '';
         $sort = isset($_GET['sort']) ? $_GET['sort'] : 'default';
